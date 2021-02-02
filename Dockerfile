@@ -1,6 +1,6 @@
 # Dockerfile to create an environment that contains the Nix package manager.
 
-FROM alpine
+FROM i386/alpine
 
 # Enable HTTPS support in wget and set nsswitch.conf to make resolution work within containers
 RUN apk add --no-cache --update openssl \
